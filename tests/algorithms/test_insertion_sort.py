@@ -1,7 +1,7 @@
 import pytest
 
-from algorithms.bubble_sort import bubbleSort
-#@pytest.mark.bubble
+from algorithms.insertion_sort import insertionSort
+#@pytest.mark.insertion
 @pytest.mark.parametrize(
     "input_list, expected_output",
     [
@@ -15,5 +15,6 @@ from algorithms.bubble_sort import bubbleSort
         )
     ]
 )
-def test_bubbleSort(input_list, expected_output):
-    assert bubbleSort(input_list) == expected_output
+#@pytest.mark.insertion
+def testSelectedSort(input_list, expected_output):
+    assert insertionSort(input_list) == expected_output
